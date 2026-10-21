@@ -1,521 +1,263 @@
+ 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>KrishiSlot - Smart Procurement</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
- 
 
 <body>
 
     <!-- NAVBAR -->
     <header class="navbar">
-        
-</button>
- <button class="register-btn" id="openFarmerLoginBtn" type="button">
-    Farmer Login
-
         <div class="logo">
             <div class="logo-icon">K</div>
-
             <div>
                 <h2>KrishiSlot</h2>
                 <p>Smart Procurement</p>
             </div>
         </div>
 
-        <button class="register-btn" id="openRegisterBtn">
-            Farmer Registration
-        </button>
-
+        <div class="navbar-actions">
+            <button class="register-btn" id="openFarmerLoginBtn" type="button">
+                Farmer Login
+            </button>
+            <button class="register-btn" id="openRegisterBtn" type="button">
+                Farmer Registration
+            </button>
+        </div>
     </header>
-    <!-- =========================
-     FARMER & CROP VISUAL
-========================= -->
 
-< 
-
-    <!-- HERO SECTION -->
+    <!-- HERO -->
     <section class="hero">
-
         <div class="hero-content">
-
-            <span class="tag">
-                SMART PROCUREMENT SYSTEM
-            </span>
-
-            <h1>
-                Book your procurement slot
-                before visiting the center.
-            </h1>
-
+            <span class="tag">SMART PROCUREMENT SYSTEM</span>
+            <h1>Book your procurement slot before visiting the center.</h1>
             <p>
-                Register as a farmer, select your nearest
-                procurement center and get a scheduled token.
+                Register as a farmer, select your nearest procurement
+                center and get a scheduled token.
             </p>
-
-            <button class="hero-btn" id="heroRegisterBtn">
+            <button class="hero-btn" id="heroRegisterBtn" type="button">
                 Register as Farmer →
             </button>
-
         </div>
-
 
         <div class="hero-card">
-
             <h3>How it works</h3>
-
-            <div class="work-step">
-                <span>1</span>
-                <p>Farmer Registration</p>
-            </div>
-
-            <div class="work-step">
-                <span>2</span>
-                <p>Select Nearest Center</p>
-            </div>
-
-            <div class="work-step">
-                <span>3</span>
-                <p>Get Procurement Slot</p>
-            </div>
-
-            <div class="work-step">
-                <span>4</span>
-                <p>Track Procurement Status</p>
-            </div>
-
+            <div class="work-step"><span>1</span><p>Farmer Registration</p></div>
+            <div class="work-step"><span>2</span><p>Select Nearest Center</p></div>
+            <div class="work-step"><span>3</span><p>Get Procurement Slot</p></div>
+            <div class="work-step"><span>4</span><p>Track Procurement Status</p></div>
         </div>
-
     </section>
-    <!-- ==============================
-     KRISHISLOT FARM + CROPS
-================================ -->
-<!-- =========================
-     AGRICULTURE SECTION
-========================= -->
 
-<section class="agriculture-section">
-
-    <!-- MAIN FARMER / AGRICULTURE BANNER -->
-
-    <div class="agriculture-banner">
-
-        <div class="agriculture-text">
-
-            <span class="section-tag">
-                SMART AGRICULTURE
-            </span>
-
-            <h1>
-                Empowering Farmers
-                Through Smart Procurement
-            </h1>
-
-            <p>
-                Register your crops, find the nearest
-                procurement center and book your slot
-                without waiting in long queues.
-            </p>
-
-            <button onclick="openRegistration()">
-                Farmer Registration →
-            </button>
-
-        </div>
-
-
-        <div class="agriculture-image">
-
-            <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Indian_farmers.jpg"
-                alt="Indian farmers working in agricultural field"
-            >
-
-        </div>
-
-    </div>
-
-
-    <!-- CROP SECTION -->
-
-    <div class="crop-title-row">
-
-        <div>
-            <span class="section-tag">
-                FARM CROPS
-            </span>
-
-            <h2>
-                Popular Crops
-            </h2>
-        </div>
-
-        <span class="fresh-badge">
-            Fresh Produce
-        </span>
-
-    </div>
-
-
-    <div class="crop-grid">
-
-
-        <!-- WHEAT -->
-
-        <div class="crop-card">
-
-            <div class="crop-image">
-
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Wheat_Field_in_India.jpg"
-                    alt="Wheat field in India"
-                >
-
-            </div>
-
-            <div class="crop-content">
-
-                <h3>Wheat</h3>
-
+    <!-- AGRICULTURE -->
+    <section class="agriculture-section">
+        <div class="agriculture-banner">
+            <div class="agriculture-text">
+                <span class="section-tag">SMART AGRICULTURE</span>
+                <h1>Empowering Farmers Through Smart Procurement</h1>
                 <p>
-                    Grain Crop
+                    Register your crops, find the nearest procurement
+                    center and book your slot without waiting in long queues.
                 </p>
-
+                <button type="button"
+                    onclick="document.getElementById('openRegisterBtn').click()">
+                    Farmer Registration →
+                </button>
             </div>
 
-        </div>
-
-
-        <!-- RICE -->
-
-        <div class="crop-card">
-
-            <div class="crop-image">
-
+            <div class="agriculture-image">
                 <img
-                    src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Rice_fields_in_rural_India.jpg/1280px-Rice_fields_in_rural_India.jpg"
-                    alt="Rice fields in rural India"
-                >
-
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Indian_farmers.jpg"
+                    alt="Farmers working in an agricultural field">
             </div>
-
-            <div class="crop-content">
-
-                <h3>Rice</h3>
-
-                <p>
-                    Paddy Crop
-                </p>
-
-            </div>
-
         </div>
 
+        <div class="crop-title-row">
+            <div>
+                <span class="section-tag">FARM CROPS</span>
+                <h2>Popular Crops</h2>
+            </div>
+            <span class="fresh-badge">Fresh Produce</span>
+        </div>
 
-        <!-- ONION -->
-
-        <div class="crop-card">
-
-            <div class="crop-image">
-
-                <div>
-                   <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=500&q=80"
-                alt="Onion crop">
+        <div class="crop-grid">
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Wheat_Field_in_India.jpg"
+                        alt="Wheat field">
                 </div>
-
+                <div class="crop-content">
+                    <h3>Wheat</h3>
+                    <p>Grain Crop</p>
+                </div>
             </div>
 
-            <div class="crop-content">
-
-                <h3>Onion</h3>
-
-                <p>
-                    Vegetable Crop
-                </p>
-
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=700&q=80"
+                        alt="Rice crop">
+                </div>
+                <div class="crop-content">
+                    <h3>Rice</h3>
+                    <p>Paddy Crop</p>
+                </div>
             </div>
 
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=500&q=80"
+                        alt="Onion crop">
+                </div>
+                <div class="crop-content">
+                    <h3>Onion</h3>
+                    <p>Vegetable Crop</p>
+                </div>
+            </div>
+
+            <div class="crop-card">
+                <div class="crop-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=80"
+                        alt="Potatoes">
+                </div>
+                <div class="crop-content">
+                    <h3>Potato</h3>
+                    <p>Vegetable Crop</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-
-        <!-- POTATO -->
- <!-- POTATO -->
-
-<div class="crop-card">
-
-    <div class="crop-image">
-
-        <img
-            src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=500&q=80"
-            alt="Potato crop"
-        >
-
-    </div>
-
-    <div class="crop-content">
-
-        <h3>Potato</h3>
-
-        <p>Vegetable Crop</p>
-
-    </div>
-
-</div>
-
-
-
-
-
-    <!-- DASHBOARD PREVIEW -->
+    <!-- FEATURES -->
     <section class="features">
-
         <h2>KrishiSlot Features</h2>
 
         <div class="feature-grid">
-
             <div class="feature-card">
                 <div class="feature-icon">📅</div>
                 <h3>Smart Scheduling</h3>
-                <p>
-                    Get a procurement slot according to
-                    center capacity and existing bookings.
-                </p>
+                <p>Get a procurement slot according to center capacity and bookings.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">📍</div>
                 <h3>Nearest Center</h3>
-                <p>
-                    Find nearby procurement centers before
-                    visiting the mandi.
-                </p>
+                <p>Find procurement centers before visiting the mandi.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">📱</div>
                 <h3>Token & QR</h3>
-                <p>
-                    Get a digital token for faster entry
-                    and verification.
-                </p>
+                <p>Get a digital token for faster entry and verification.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
                 <h3>Live Status</h3>
-                <p>
-                    Track your procurement from arrival
-                    to payment.
-                </p>
+                <p>Track procurement from arrival to payment.</p>
             </div>
-
         </div>
-
     </section>
 
-
     <!-- REGISTRATION MODAL -->
-
     <div class="modal" id="registrationModal">
-
         <div class="registration-box">
 
-            <!-- HEADER -->
-
             <div class="registration-header">
-
                 <div>
                     <h2>🌾 Farmer Registration</h2>
-
-                    <p>
-                        Create your KrishiSlot farmer account
-                    </p>
+                    <p>Create your KrishiSlot farmer account</p>
                 </div>
-
-                <button
-                    class="close-btn"
-                    id="closeRegisterBtn">
-                    ×
-                </button>
-
+                <button class="close-btn" id="closeRegisterBtn" type="button">×</button>
             </div>
 
-
-            <!-- STEPS -->
-
+            <!-- PROGRESS -->
             <div class="steps">
-
-                <div
-                    class="step active"
-                    id="stepIndicator1">
-
-                    <div>1</div>
-                    <span>Personal</span>
-
+                <div class="step active" id="stepIndicator1">
+                    <div>1</div><span>Personal</span>
                 </div>
-
-
-                <div
-                    class="step"
-                    id="stepIndicator2">
-
-                    <div>2</div>
-                    <span>Farm</span>
-
+                <div class="step" id="stepIndicator2">
+                    <div>2</div><span>Farm</span>
                 </div>
-
-
-                <div
-                    class="step"
-                    id="stepIndicator3">
-
-                    <div>3</div>
-                    <span>Verify</span>
-
+                <div class="step" id="stepIndicator3">
+                    <div>3</div><span>Verify</span>
                 </div>
-
             </div>
-
 
             <!-- STEP 1 -->
-
-            <div
-                class="form-step active"
-                id="formStep1">
-
+            <div class="form-step active" id="formStep1">
                 <h3>Personal Details</h3>
 
                 <label>
                     Full Name
-
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Enter your full name">
+                    <input type="text" id="name" placeholder="Enter your full name" required>
                 </label>
 
-
                 <div class="two-input">
-
                     <label>
                         Mobile Number
-
-                        <input
-                            type="tel"
-                            id="mobile"
-                            maxlength="10"
-                            placeholder="10 digit mobile number">
+                        <input type="tel" id="mobile" maxlength="10"
+                            inputmode="numeric" placeholder="10 digit mobile number" required>
                     </label>
-
-
                     <label>
                         Age
-
-                        <input
-                            type="number"
-                            id="age"
-                            placeholder="Enter age">
+                        <input type="number" id="age" min="18" placeholder="Enter age" required>
                     </label>
-
                 </div>
 
-
                 <div class="two-input">
-
                     <label>
                         State
-
-                        <select id="state">
-
-                            <option value="">
-                                Select State
-                            </option>
-
+                        <select id="state" required>
+                            <option value="">Select State</option>
                             <option>Haryana</option>
                             <option>Uttar Pradesh</option>
                             <option>Rajasthan</option>
                             <option>Punjab</option>
                             <option>Bihar</option>
                             <option>Madhya Pradesh</option>
-
                         </select>
-
                     </label>
-
-
                     <label>
                         District
-
-                        <input
-                            type="text"
-                            id="district"
-                            placeholder="Enter district">
+                        <input type="text" id="district" placeholder="Enter district" required>
                     </label>
-
                 </div>
 
-
-                <button
-                    class="next-btn"
-                    id="nextStep1">
-
+                <button class="next-btn" id="nextStep1" type="button">
                     Continue →
-
                 </button>
-
             </div>
 
-
             <!-- STEP 2 -->
-
-            <div
-                class="form-step"
-                id="formStep2">
-
+            <div class="form-step" id="formStep2">
                 <h3>Farm Details</h3>
 
-
                 <div class="two-input">
-
                     <label>
                         Village
-
-                        <input
-                            type="text"
-                            id="village"
-                            placeholder="Enter village">
+                        <input type="text" id="village" placeholder="Enter village" required>
                     </label>
-
-
                     <label>
                         Land Area (Acres)
-
-                        <input
-                            type="number"
-                            id="land"
-                            placeholder="Example: 5">
+                        <input type="number" id="land" min="0.1" step="0.1"
+                            placeholder="Example: 5" required>
                     </label>
-
                 </div>
 
-
                 <div class="two-input">
-
                     <label>
                         Main Crop
-
-                        <select id="crop">
-
-                            <option value="">
-                                Select Crop
-                            </option>
-
+                        <select id="crop" required>
+                            <option value="">Select Crop</option>
                             <option>Onion</option>
                             <option>Wheat</option>
                             <option>Rice</option>
@@ -523,357 +265,220 @@
                             <option>Mustard</option>
                             <option>Maize</option>
                             <option>Cotton</option>
-
                         </select>
-
                     </label>
-
-
                     <label>
                         Quantity (Quintal)
-
-                        <input
-                            type="number"
-                            id="quantity"
-                            placeholder="Example: 40">
+                        <input type="number" id="quantity" min="1"
+                            placeholder="Example: 40" required>
                     </label>
-
                 </div>
 
-
                 <label>
-
                     Area / Pincode
-
-                    <input
-                        type="text"
-                        id="location"
-                        placeholder="Enter village, area or pincode">
-
+                    <input type="text" id="location"
+                        placeholder="Enter village, area or pincode" required>
                 </label>
 
-
-                <!-- LOCATION BUTTON -->
-
-                <button
-                    class="location-btn"
-                    id="locationBtn">
-
+                <button class="location-btn" id="locationBtn" type="button">
                     📍 Use My Current Location
-
                 </button>
-
-
-                <!-- NEAREST CENTERS -->
 
                 <div class="nearest-box">
-
                     <div class="nearest-heading">
-
                         <div>
-
-                            <h3>
-                                📍 Nearest Procurement Centers
-                            </h3>
-
-                            <p id="locationMessage">
-                                Select a center from the list
-                            </p>
-
+                            <h3>📍 Nearest Procurement Centers</h3>
+                            <p id="locationMessage">Select a center from the list</p>
                         </div>
-
                     </div>
-
 
                     <div id="centerList">
-
                         <div class="empty-center">
-
                             <span>📍</span>
-
-                            <p>
-                                Procurement centers will
-                                appear here.
-                            </p>
-
+                            <p>Procurement centers will appear here.</p>
                         </div>
-
                     </div>
-
                 </div>
-
 
                 <div class="button-row">
-
-                    <button
-                        class="back-btn"
-                        id="backStep2">
-
-                        ← Back
-
-                    </button>
-
-
-                    <button
-                        class="next-btn"
-                        id="nextStep2">
-
-                        Continue →
-
-                    </button>
-
+                    <button class="back-btn" id="backStep2" type="button">← Back</button>
+                    <button class="next-btn" id="nextStep2" type="button">Continue →</button>
                 </div>
-
             </div>
-
 
             <!-- STEP 3 -->
-
-            <div
-                class="form-step"
-                id="formStep3">
-
+            <div class="form-step" id="formStep3">
                 <h3>Mobile Verification</h3>
 
-
                 <div class="otp-card">
-
-                    <div class="otp-icon">
-                        📱
-                    </div>
-
-                    <p>
-                        OTP sent to
-                    </p>
-
-                    <strong id="mobileDisplay">
-                        ******1234
-                    </strong>
-
+                    <div class="otp-icon">📱</div>
+                    <p>Demo OTP for</p>
+                    <strong id="mobileDisplay">Mobile number</strong>
                 </div>
-
 
                 <label>
-
                     Enter 6 Digit OTP
-
-                    <input
-                        type="text"
-                        id="otp"
-                        maxlength="6"
-                        placeholder="Enter OTP">
-
+                    <input type="text" id="otp" maxlength="6"
+                        inputmode="numeric" placeholder="Enter OTP" required>
                 </label>
 
-
-                <p class="demo-otp">
-
-                    Demo OTP:
-                    <strong>123456</strong>
-
-                </p>
-
+                <p class="demo-otp">Demo OTP: <strong>123456</strong></p>
 
                 <div class="button-row">
-
-                    <button
-                        class="back-btn"
-                        id="backStep3">
-
-                        ← Back
-
-                    </button>
-
-
-                    <button
-                        class="next-btn"
-                        id="completeBtn">
-
+                    <button class="back-btn" id="backStep3" type="button">← Back</button>
+                    <button class="next-btn" id="completeBtn" type="button">
                         ✓ Complete Registration
-
                     </button>
-
                 </div>
-
             </div>
 
-
-            <!-- SUCCESS -->
-
-            <div
-                class="success-screen"
-                id="successScreen">
-
-                <div class="success-icon">
-                    ✓
-                </div>
-
-                <h2>
-                    Registration Successful!
-                </h2>
-
-                <p>
-                    Welcome to KrishiSlot
-                </p>
-
+            <!-- REGISTRATION SUCCESS -->
+            <div class="success-screen" id="successScreen">
+                <div class="success-icon">✓</div>
+                <h2>Registration Successful!</h2>
+                <p>Welcome to KrishiSlot</p>
 
                 <div class="farmer-id">
-
                     <span>Your Farmer ID</span>
-
-                    <strong id="farmerId">
-                        KSL-000000
-                    </strong>
-
+                    <strong id="farmerId">KSL-000000</strong>
                 </div>
-
 
                 <div class="registered-details">
-
-                    <p>
-                        <b>Farmer:</b>
-                        <span id="successName"></span>
-                    </p>
-
-                    <p>
-                        <b>Crop:</b>
-                        <span id="successCrop"></span>
-                    </p>
-
-                    <p>
-                        <b>Center:</b>
-                        <span id="successCenter"></span>
-
-                    </p>
-                    
-<p><strong>Booking Date:</strong>
-    <span id="successBookingDate">-</span>
-</p>
-
-<p><strong>Time Slot:</strong>
-    <span id="successTimeSlot">-</span>
-</p>
-
-<p><strong>Token Number:</strong>
-    <span id="successTokenNumber">-</span>
-</p>
-
-
+                    <p><b>Farmer:</b> <span id="successName"></span></p>
+                    <p><b>Crop:</b> <span id="successCrop"></span></p>
+                    <p><b>Center:</b> <span id="successCenter"></span></p>
+                    <p><b>Booking Date:</b> <span id="successBookingDate">-</span></p>
+                    <p><b>Time Slot:</b> <span id="successTimeSlot">-</span></p>
+                    <p><b>Token Number:</b> <span id="successTokenNumber">-</span></p>
                 </div>
 
-
-                <button
-                    class="next-btn"
-                    id="finishBtn">
-
+                <button class="next-btn" id="finishBtn" type="button">
                     Go to Dashboard →
-
                 </button>
+            </div>
+        </div>
+    </div>
 
+    <!-- FARMER LOGIN PORTAL -->
+    <section id="farmerLoginPortal" class="modal" style="display:none;">
+        <div class="registration-box">
+            <div class="registration-header">
+                <div>
+                    <h2>Farmer Login Portal</h2>
+                    <p>Registered mobile number ya Farmer ID enter karo.</p>
+                </div>
+                <button id="closeFarmerPortal" class="close-btn" type="button">×</button>
             </div>
 
+            <form id="farmerLoginForm">
+                <label for="farmerLoginValue">Mobile Number / Farmer ID</label>
+                <input
+                    id="farmerLoginValue"
+                    type="text"
+                    placeholder="Mobile Number / Farmer ID"
+                    required
+                    style="width:100%;padding:12px;margin:12px 0;box-sizing:border-box;">
+
+                <button type="submit" class="register-btn">
+                    View My Booking
+                </button>
+            </form>
+
+            <p id="farmerLoginMessage" role="status"></p>
+            <div id="farmerBookingDetails"></div>
         </div>
-
-    </div>
-
+    </section>
 
     <!-- TOAST -->
+    <div class="toast" id="toast" role="status"></div>
 
-    <div
-        class="toast"
-        id="toast">
-    </div>
-    
-  <section id="farmerLoginPortal" class="modal" style="display:none;">
-    <div class="registration-box">
-  <h2>Farmer Login Portal</h2>
-  <p>Registered mobile number ya Farmer ID enter karo.</p>
+    <!-- LOGIN SCRIPT -->
+    <script>
+        const portal = document.getElementById("farmerLoginPortal");
+        const loginForm = document.getElementById("farmerLoginForm");
+        const loginMessage = document.getElementById("farmerLoginMessage");
+        const bookingDetails = document.getElementById("farmerBookingDetails");
 
-  <form id="farmerLoginForm">
-    <input id="farmerLoginValue" type="text"
-      placeholder="Mobile Number / Farmer ID" required
-      style="width:100%;padding:12px;margin:12px 0;box-sizing:border-box;">
-    <button type="submit" class="register-btn">View My Booking</button>
-  </form>
+        document.getElementById("openFarmerLoginBtn").addEventListener("click", () => {
+            portal.style.display = "block";
+        });
 
-  <p id="farmerLoginMessage"></p>
-  <div id="farmerBookingDetails"></div>
-  <button id="closeFarmerPortal" type="button">Back to Home</button>
-</section>
+        document.getElementById("closeFarmerPortal").addEventListener("click", () => {
+            portal.style.display = "none";
+            loginMessage.textContent = "";
+            bookingDetails.replaceChildren();
+        });
 
-<script>
-const portal = document.getElementById("farmerLoginPortal");
+        loginForm.addEventListener("submit", async (event) => {
+            event.preventDefault();
 
-document.getElementById("openFarmerLoginBtn").addEventListener("click", () => {
-  portal.style.display = "block";
-  portal.scrollIntoView({ behavior: "smooth" });
-});
+            const loginValue = document.getElementById("farmerLoginValue").value.trim();
 
-document.getElementById("closeFarmerPortal").addEventListener("click", () => {
-  portal.style.display = "none";
-});
+            if (!loginValue) {
+                loginMessage.textContent = "Mobile number ya Farmer ID enter karo.";
+                return;
+            }
 
-document.getElementById("farmerLoginForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
+            loginMessage.textContent = "Loading booking...";
+            bookingDetails.replaceChildren();
 
-  const loginValue = document.getElementById("farmerLoginValue").value.trim();
-  const message = document.getElementById("farmerLoginMessage");
-  const details = document.getElementById("farmerBookingDetails");
+            try {
+                const response = await fetch(
+                    "https://krishislot.onrender.com/api/farmer/login",
+                    {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ loginValue })
+                    }
+                );
 
-  message.textContent = "Loading booking...";
-  details.replaceChildren();
+                const result = await response.json();
 
-  try {
-    const response = await fetch("http://localhost:5000/api/farmer/login", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ loginValue })
-    });
+                if (!response.ok || !result.success || !result.farmer) {
+                    throw new Error(result.message || "Farmer not found.");
+                }
 
-    const result = await response.json();
+                const farmer = result.farmer;
+                const table = document.createElement("table");
+                table.style.cssText =
+                    "width:100%;border-collapse:collapse;margin-top:15px";
 
-    if (!response.ok || !result.success) {
-      throw new Error(result.message || "Farmer not found.");
-    }
+                const rows = [
+                    ["Farmer Name", farmer.name],
+                    ["Farmer ID", farmer.farmerId],
+                    ["Mobile", farmer.mobile],
+                    ["Crop", farmer.crop],
+                    ["Quantity (Quintal)", farmer.quantity],
+                    ["Procurement Center", farmer.selectedCenter],
+                    ["Booking Date", farmer.bookingDate],
+                    ["Time Slot", farmer.timeSlot],
+                    ["Token Number", farmer.tokenNumber],
+                    ["Status", farmer.status]
+                ];
 
-    const f = result.farmer;
-    const table = document.createElement("table");
-    table.style.cssText = "width:100%;border-collapse:collapse;margin-top:15px";
+                rows.forEach(([label, value]) => {
+                    const row = table.insertRow();
 
-    [
-      ["Farmer Name", f.name],
-      ["Farmer ID", f.farmerId],
-      ["Mobile", f.mobile],
-      ["Crop", f.crop],
-      ["Quantity", f.quantity],
-      ["Procurement Center", f.selectedCenter],
-      ["Booking Date", f.bookingDate],
-      ["Time Slot", f.timeSlot],
-      ["Token Number", f.tokenNumber],
-      ["Status", f.status]
-    ].forEach(([label, value]) => {
-      const row = table.insertRow();
-      [label, value ?? "Not assigned"].forEach(text => {
-        const cell = row.insertCell();
-        cell.textContent = text;
-        cell.style.cssText = "padding:10px;border:1px solid #ddd;text-align:left";
-      });
-    });
+                    [label, value ?? "Not assigned"].forEach((text) => {
+                        const cell = row.insertCell();
+                        cell.textContent = String(text);
+                        cell.style.cssText =
+                            "padding:10px;border:1px solid #ddd;text-align:left";
+                    });
+                });
 
-    details.appendChild(table);
-    message.textContent = "Booking details loaded successfully!";
-  } catch (error) {
-    message.textContent = error.message || "Server connection failed.";
-  }
-});
-</script>
-</body>
-</html>
+                bookingDetails.appendChild(table);
+                loginMessage.textContent = "Booking details loaded successfully!";
 
+            } catch (error) {
+                loginMessage.textContent =
+                    error.message || "Server connection failed. Please try again.";
+            }
+        });
+    </script>
 
-
+    <!-- EXISTING REGISTRATION LOGIC -->
     <script src="script.js"></script>
 
 </body>
 </html>
-
