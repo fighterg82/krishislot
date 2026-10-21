@@ -1,6 +1,5 @@
  
-
-const API_URL = "http://localhost:5000/api/farmers";
+ const API_URL = "https://krishislot.onrender.com/api/farmers";
 
 const table = document.getElementById("farmerTable");
 const total = document.getElementById("total");
