@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KrishiSlot Admin Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f2;
+      margin: 0;
+      padding: 25px;
+    }
+    h1 { color: #245c35; }
+    .panel {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px 5px 5px 0;
+    }
+    button {
+      background: #245c35;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .table-wrap { overflow-x: auto; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: white;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th { background: #245c35; color: white; }
+  </style>
+</head>
+<body>
+  <h1>KrishiSlot Admin Portal</h1>
+
+  <div class="panel">
+    <h2>Total Registered Farmers: <span id="total">0</span></h2>
+    <input id="search" type="text" placeholder="Search farmer or crop...">
+    <button id="refreshBtn">Refresh Data</button>
+    <p id="status">Loading farmers...</p>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          
+<tr>
+    <th>Farmer ID</th>
+    <th>Name</th>
+    <th>Mobile</th>
+    <th>District</th>
+    <th>Village</th>
+    <th>Crop</th>
+    <th>Quantity</th>
+    <th>Centre</th>
+    <th>Booking Date</th>
+    <th>Time Slot</th>
+    <th>Token Number</th>
+    <th>Status</th>
+    <th>Action</th>
+</tr>
+
+           
+      </thead>
+      <tbody id="farmerTable"></tbody>
+    </table>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

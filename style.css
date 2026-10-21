@@ -1,0 +1,1360 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    height: 76px;
+    background: #10251b;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 45px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 11px;
+
+    background: #2daa6b;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.logo p {
+    font-size: 10px;
+    color: #aabbb0;
+    margin-top: 3px;
+}
+
+.register-btn,
+.hero-btn,
+.next-btn {
+    background: #1e8f5a;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.register-btn:hover,
+.hero-btn:hover,
+.next-btn:hover {
+    background: #167747;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 460px;
+
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+
+    gap: 40px;
+
+    padding: 70px 9%;
+
+    background:
+        linear-gradient(
+            130deg,
+            #ecf8f1,
+            #f8fcfa
+        );
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tag {
+    display: inline-block;
+
+    color: #1e8f5a;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1.3px;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 44px;
+
+    line-height: 1.12;
+
+    max-width: 650px;
+
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 600px;
+
+    color: #6f7988;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    width: fit-content;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    background: white;
+
+    padding: 27px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(20, 45, 30, 0.09);
+
+    align-self: center;
+}
+
+.hero-card h3 {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+.work-step {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid #edf0f2;
+}
+
+.work-step:last-child {
+    border-bottom: none;
+}
+
+.work-step span {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #e5f5eb;
+
+    color: #1e8f5a;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.work-step p {
+    margin: 0;
+
+    color: #465365;
+
+    font-size: 12px;
+}
+
+
+/* FEATURES */
+
+.features {
+    padding: 55px 9%;
+}
+
+.features > h2 {
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 30px;
+}
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 23px;
+
+    border-radius: 15px;
+
+    border:
+        1px solid #e8ebef;
+}
+
+.feature-icon {
+    font-size: 28px;
+
+    margin-bottom: 14px;
+}
+
+.feature-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #788394;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* MODAL */
+
+.modal {
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(7, 25, 16, 0.65);
+
+    backdrop-filter: blur(5px);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+
+/* REGISTRATION BOX */
+
+.registration-box {
+    width: 100%;
+
+    max-width: 670px;
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,0.25);
+}
+
+
+/* HEADER */
+
+.registration-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+.registration-header h2 {
+    font-size: 23px;
+
+    margin-bottom: 5px;
+}
+
+.registration-header p {
+    color: #7b8497;
+
+    font-size: 11px;
+}
+
+.close-btn {
+    width: 35px;
+    height: 35px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f1f3f5;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* STEPS */
+
+.steps {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.step {
+    flex: 1;
+
+    text-align: center;
+
+    position: relative;
+
+    color: #99a1ad;
+}
+
+.step div {
+    width: 35px;
+    height: 35px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #edf0f3;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.step span {
+    display: block;
+
+    font-size: 10px;
+
+    margin-top: 7px;
+}
+
+.step.active {
+    color: #1e8f5a;
+}
+
+.step.active div {
+    background: #1e8f5a;
+
+    color: white;
+}
+
+
+/* FORM */
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+.form-step h3 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.form-step label {
+    display: block;
+
+    color: #667085;
+
+    font-size: 11px;
+
+    margin-bottom: 15px;
+}
+
+.form-step input,
+.form-step select {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 7px;
+
+    border:
+        1px solid #dfe4e8;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: white;
+}
+
+.form-step input:focus,
+.form-step select:focus {
+    border-color: #1e8f5a;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(30,143,90,0.08);
+}
+
+.two-input {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+}
+
+
+/* LOCATION */
+
+.location-btn {
+    width: 100%;
+
+    border:
+        1px dashed #a9d1b9;
+
+    color: #1e8f5a;
+
+    background: #f3faf5;
+
+    padding: 10px;
+
+    border-radius: 9px;
+
+    font-weight: bold;
+
+    font-size: 11px;
+
+    cursor: pointer;
+
+    margin-bottom: 15px;
+}
+
+
+/* NEAREST CENTER */
+
+.nearest-box {
+    background: #f8fcf9;
+
+    border:
+        1px solid #dcefe3;
+
+    border-radius: 13px;
+
+    padding: 16px;
+}
+
+.nearest-heading h3 {
+    font-size: 14px;
+
+    margin-bottom: 4px;
+}
+
+.nearest-heading p {
+    font-size: 10px;
+
+    color: #7b8497;
+
+    margin-bottom: 10px;
+}
+
+
+/* CENTER CARD */
+
+.center-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    background: white;
+
+    border:
+        1px solid #e1e6e3;
+
+    border-radius: 11px;
+
+    padding: 11px;
+
+    margin-top: 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.center-card:hover {
+    border-color: #50a977;
+}
+
+.center-card.selected {
+    border:
+        2px solid #1e8f5a;
+
+    background: #f1fbf5;
+}
+
+.radio {
+    width: 18px;
+    height: 18px;
+
+    border:
+        2px solid #b8c2bc;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+.center-card.selected .radio {
+    border-color: #1e8f5a;
+
+    position: relative;
+}
+
+.center-card.selected .radio::after {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #1e8f5a;
+
+    top: 3px;
+    left: 3px;
+}
+
+.center-info {
+    flex: 1;
+}
+
+.center-info strong {
+    display: block;
+
+    font-size: 11px;
+
+    color: #172033;
+}
+
+.center-info span {
+    display: block;
+
+    font-size: 9px;
+
+    color: #7b8497;
+
+    margin-top: 3px;
+}
+
+.distance {
+    text-align: right;
+}
+
+.distance strong {
+    display: block;
+
+    color: #1e8f5a;
+
+    font-size: 11px;
+}
+
+.distance span {
+    color: #8a94a4;
+
+    font-size: 8px;
+}
+
+
+/* BUTTONS */
+
+.button-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+.back-btn {
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #eef1f4;
+
+    color: #273447;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* OTP */
+
+.otp-card {
+    text-align: center;
+
+    background: #f4faf6;
+
+    border:
+        1px solid #dcefe3;
+
+    padding: 20px;
+
+    border-radius: 13px;
+
+    margin-bottom: 20px;
+}
+
+.otp-icon {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.otp-card p {
+    font-size: 11px;
+
+    color: #778192;
+
+    margin-bottom: 5px;
+}
+
+.otp-card strong {
+    font-size: 20px;
+
+    color: #1e8f5a;
+}
+
+.demo-otp {
+    font-size: 10px;
+
+    color: #8a94a4;
+
+    margin-top: -5px;
+}
+
+
+/* SUCCESS */
+
+.success-screen {
+    display: none;
+
+    text-align: center;
+
+    padding: 20px 5px;
+}
+
+.success-screen.show {
+    display: block;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+
+    background: #e4f7eb;
+
+    color: #1e8f5a;
+
+    display: grid;
+    place-items: center;
+
+    margin: auto;
+
+    font-size: 32px;
+}
+
+.success-screen h2 {
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+}
+
+.success-screen > p {
+    color: #7b8497;
+
+    font-size: 12px;
+}
+
+.farmer-id {
+    background: #f8fdf9;
+
+    border:
+        1px dashed #b6d7c0;
+
+    padding: 17px;
+
+    border-radius: 12px;
+
+    margin: 22px 0;
+}
+
+.farmer-id span {
+    display: block;
+
+    color: #7b8497;
+
+    font-size: 10px;
+}
+
+.farmer-id strong {
+    display: block;
+
+    color: #1e8f5a;
+
+    font-size: 25px;
+
+    margin-top: 5px;
+}
+
+.registered-details {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.registered-details p {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    padding: 10px 0;
+
+    border-bottom:
+        1px solid #edf0f2;
+
+    font-size: 11px;
+}
+
+.registered-details span {
+    color: #5f6a79;
+
+    text-align: right;
+}
+
+
+/* EMPTY CENTER */
+
+.empty-center {
+    text-align: center;
+
+    padding: 15px;
+
+    color: #8a94a4;
+}
+
+.empty-center span {
+    font-size: 25px;
+}
+
+.empty-center p {
+    font-size: 10px;
+
+    margin-top: 5px;
+}
+
+
+/* TOAST */
+
+.toast {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    background: #15231c;
+
+    color: white;
+
+    padding: 12px 17px;
+
+    border-radius: 10px;
+
+    font-size: 11px;
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition: 0.2s;
+
+    pointer-events: none;
+
+    z-index: 5000;
+}
+
+.toast.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 45px 25px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px;
+
+        gap: 15px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .register-btn {
+        width: 100%;
+    }
+
+    .two-input {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .registration-box {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+}
+/* =========================
+   FARMER BANNER
+========================= */
+
+ /* =================================
+   AGRICULTURE SECTION
+================================= */
+
+.agriculture-section {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+
+/* =================================
+   MAIN BANNER
+================================= */
+
+.agriculture-banner {
+
+    min-height: 310px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        120deg,
+        #edf9f1,
+        #f8fcf8
+    );
+
+    border: 1px solid #dcefe3;
+
+    box-shadow:
+        0 12px 30px
+        rgba(20, 70, 40, 0.06);
+}
+
+
+.agriculture-text {
+
+    width: 55%;
+
+    padding: 42px;
+}
+
+
+.section-tag {
+
+    color: #1e8f5a;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+
+.agriculture-text h1 {
+
+    font-size: 35px;
+
+    line-height: 1.15;
+
+    margin: 10px 0 12px;
+
+    color: #123522;
+
+}
+
+
+.agriculture-text p {
+
+    max-width: 500px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #718078;
+
+    margin-bottom: 22px;
+}
+
+
+.agriculture-text button {
+
+    border: none;
+
+    background: #1e8f5a;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+
+.agriculture-text button:hover {
+
+    background: #167747;
+
+    transform: translateY(-1px);
+}
+
+
+/* =================================
+   FARMER IMAGE
+================================= */
+
+.agriculture-image {
+
+    width: 45%;
+
+    height: 310px;
+
+    overflow: hidden;
+}
+
+
+.agriculture-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =================================
+   CROP HEADING
+================================= */
+
+.crop-title-row {
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-top: 35px;
+
+    margin-bottom: 18px;
+}
+
+
+.crop-title-row h2 {
+
+    font-size: 25px;
+
+    margin: 5px 0 0;
+
+    color: #183426;
+}
+
+
+.fresh-badge {
+
+    background: #e8f7ed;
+
+    color: #1e8f5a;
+
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   CROP GRID
+================================= */
+
+.crop-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+
+/* =================================
+   CROP CARD
+================================= */
+
+.crop-card {
+
+    background: white;
+
+    border: 1px solid #e5ebe7;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 22px
+        rgba(20, 60, 35, 0.06);
+
+    transition: .25s;
+}
+
+
+.crop-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 28px
+        rgba(20, 60, 35, 0.10);
+}
+
+
+/* =================================
+   CROP IMAGE
+================================= */
+
+.crop-image {
+
+    height: 155px;
+
+    background: #edf6ef;
+
+    overflow: hidden;
+}
+
+
+.crop-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =================================
+   ONION / POTATO TEMP VISUAL
+================================= */
+
+.onion-placeholder,
+.potato-placeholder {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf7ed,
+            #d7ecd9
+        );
+}
+
+
+.onion-placeholder div {
+
+    font-size: 65px;
+}
+
+
+.potato-placeholder div {
+
+    font-size: 65px;
+}
+
+
+/* =================================
+   CROP TEXT
+================================= */
+
+.crop-content {
+
+    padding: 13px;
+}
+
+
+.crop-content h3 {
+
+    margin: 0 0 4px;
+
+    font-size: 14px;
+
+    color: #193726;
+}
+
+
+.crop-content p {
+
+    margin: 0;
+
+    font-size: 10px;
+
+    color: #7b8790;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 800px) {
+
+    .agriculture-banner {
+
+        flex-direction: column;
+    }
+
+
+    .agriculture-text {
+
+        width: 100%;
+
+        padding: 30px;
+    }
+
+
+    .agriculture-image {
+
+        width: 100%;
+
+        height: 230px;
+    }
+
+
+    .crop-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .crop-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .agriculture-text h1 {
+
+        font-size: 28px;
+    }
+
+} 
+
+/* Farmer Login: same modal size and appearance as Registration */
+#farmerLoginPortal.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background: rgba(7, 25, 16, 0.65);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+#farmerLoginPortal.modal.show {
+    display: flex !important;
+}
+
+#farmerLoginPortal .registration-box {
+    width: 100%;
+    max-width: 670px;
+    max-height: 92vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-sizing: border-box;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+    #farmerLoginPortal .registration-box {
+        padding: 20px;
+    }
+}
